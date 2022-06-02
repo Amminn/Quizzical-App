@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Karla:wght@700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Karla:wght@700&display=swap");
 *,
 ::after,
 ::before {
@@ -18,7 +18,7 @@ body {
   background-color: #1C1C1C;
 }
 
-#root {
+#root { 
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -33,13 +33,15 @@ body {
 }
 
 .app {
+  display: flex;
+  align-items: center;
   background-color: #F5F7FB;
   min-height: 550px;
   width: 100%;
   max-width: 550px;
   position: relative;
   overflow: hidden;
-  padding: 4rem 7.5rem 2.5rem;
+  padding: 4rem 7.5rem 2.5rem;  
   z-index: 1;
 }
 
@@ -50,7 +52,7 @@ body {
   position: absolute;
   top: -170px;
   right: -62px;
-  background: url("./images/blob-top-right.png") no-repeat;
+  background: url("../images/blob-top-right.png") no-repeat;
   -webkit-transition: .3s ease;
   transition: .3s ease;
   z-index: 0;
@@ -63,7 +65,7 @@ body {
   height: 235px;
   left: -106px;
   top: 410px;
-  background: url(./images/blobs-bottom-left.png);
+  background: url(../images/blobs-bottom-left.png);
   -webkit-transition: .3s ease;
   transition: .3s ease;
   z-index: -1;
@@ -77,6 +79,10 @@ body {
 .app.quiz-time::before {
   left: -182px;
   top: 480px;
+}
+
+.app.quiz-time {
+  display: block; 
 }
 
 .welcoming {

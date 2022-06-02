@@ -37,7 +37,6 @@ body {
   background-color: #1C1C1C;
 }
 
-
 #root {
   width: 100%;
   min-height: 100vh;
@@ -47,6 +46,8 @@ body {
 }
 
 .app {
+  display: flex;
+  align-items: center;
   background-color: $backgroundColor;
   min-height: 550px;
   width: 100%;
@@ -64,7 +65,7 @@ body {
   position: absolute;
   top: -170px;
   right: -62px;
-  background: url('./images/blob-top-right.png') no-repeat;
+  background: url('../images/blob-top-right.png') no-repeat;
   transition: .3s ease;
   z-index: 0;
 }
@@ -76,9 +77,13 @@ body {
   height: 235px;
   left: -106px;
   top: 410px;
-  background: url(./images/blobs-bottom-left.png);
+  background: url(../images/blobs-bottom-left.png);
   transition: .3s ease;
   z-index: -1;
+}
+
+.app.quiz-time {
+  display: block; 
 }
 
 .app.quiz-time::after {
